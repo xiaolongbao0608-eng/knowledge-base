@@ -1,0 +1,7 @@
+﻿{
+  "_comment": "Codex workspace context — vault 关联配置",
+  "vault": "F:/codex知识库",
+  "git_workspace": "F:/GIT仓库",
+  "created": "2026-07-13",
+  "description": "Obsidian 主知识库 vault，包含 00~10 系列文件夹"
+}
