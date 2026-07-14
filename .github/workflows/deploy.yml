@@ -1,5 +1,5 @@
-# VitePress 鈫?GitHub Pages 鑷姩閮ㄧ讲
-# push 鍒?main/master 鏃惰Е鍙?name: Deploy VitePress to GitHub Pages
+# VitePress 閳?GitHub Pages 閼奉亜濮╅柈銊ц
+# push 閸?main/master 閺冩儼袝閸?name: Deploy VitePress to GitHub Pages
 
 on:
   push:
@@ -26,7 +26,7 @@ jobs:
         with:
           node-version: 22
           cache: npm
-      - run: npm install --ignore-scripts
+      - run: npm install
       - run: npx vitepress build .
       - uses: actions/upload-pages-artifact@v4
         with:
