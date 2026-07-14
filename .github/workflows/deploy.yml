@@ -1,6 +1,5 @@
 #
-# GitHub Pages 部署工作流
-# 每当 push 到 master/main 分支时自动构建 VitePress 并部署到 Pages
+# GitHub Pages 部署工作�?# 每当 push �?master/main 分支时自动构�?VitePress 并部署到 Pages
 #
 name: Deploy VitePress to GitHub Pages
 
@@ -33,7 +32,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: npm
 
       - name: Install dependencies
