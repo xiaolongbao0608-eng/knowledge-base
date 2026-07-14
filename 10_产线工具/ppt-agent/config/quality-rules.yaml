@@ -1,0 +1,71 @@
+﻿# 内容质检规则
+# 每项规则的格式: id + description + severity + check_type + threshold
+#
+# severity 含义:
+#   block: 不通过则阻断生成，必须修正
+#   warn:  不通过则标注警告，继续生成但提示用户
+#   suggest: 不通过则给出建议，不中断流程
+
+rules:
+  - id: density-per-slide
+    description: "正文超过字数阈值时自动拆分或警告"
+    severity: warn
+    check_type: text_length
+    threshold:
+      max_chinese_chars: 200
+      max_bullet_points: 6
+      max_bullet_depth: 2
+    action: "超过阈值时: 1) 尝试拆分为两页 2) 如不能拆分则标注警告并降级为注释"
+
+  - id: empty-title
+    description: "有正文的页面必须有标题，只有标题的页面必须补充说明"
+    severity: block
+    check_type: structure
+    threshold:
+      min_content_words: 20
+    action: "标题为空: 根据正文自动生成标题。正文为空: 要求补充内容或标注为[占位]"
+
+  - id: coherence-check
+    description: "页间逻辑连贯性检查"
+    severity: warn
+    check_type: semantic
+    threshold: null
+    action: "检查上一页的结论/结尾句与下一页的开头句是否存在逻辑跳跃。如跳跃>1个概念层级，标注过渡建议"
+
+  - id: jargon-check
+    description: "检测：同一缩写首次出现时是否有全称"
+    severity: suggest
+    check_type: pattern
+    threshold: null
+    action: "扫描所有大写缩写(如OPC/BP/KPI)，确认首次出现时写了全称"
+
+  - id: data-source
+    description: "引用数据时必须标注来源或说明假设"
+    severity: suggest
+    check_type: pattern
+    threshold: null
+    action: "扫描百分比和金额数字，检查附近是否有来源标注或'假设'说明"
+
+  - id: visual-conflict
+    description: "风格约束与实际内容类型的冲突检测"
+    severity: warn
+    check_type: constraint_conflict
+    threshold: null
+    conflicts:
+      - {style_rule: "dark_bg", content_type: "dense_table", message: "深色背景+数据密集表格可读性差，建议切换为浅色风格或减少表格数据"}
+      - {style_rule: "minimal_ink", content_type: "multi_chart", message: "极简墨韵风格不适合多图表页面，建议切换风格或简化"}
+      - {style_rule: "bold_vibrant", content_type: "gov_report", message: "大胆活力风格不适合正式汇报场景，建议切换为简洁专业或典雅经典"}
+
+  - id: page-count-range
+    description: "检查总页数是否在结构模板允许范围内"
+    severity: block
+    check_type: range
+    threshold: null
+    action: "页数超出max_pages: 合并次要页面。页数不足default_pages的60%: 扩充核心内容页面"
+
+  - id: number-format
+    description: "大数字格式化: 超过5位自动加千分位，亿元/万元由场景决定"
+    severity: suggest
+    check_type: pattern
+    threshold: null
+    action: "检测5位以上纯数字，自动添加千分位分隔符。检测是否需要亿/万单位标注"

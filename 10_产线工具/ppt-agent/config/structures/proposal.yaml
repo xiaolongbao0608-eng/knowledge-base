@@ -1,0 +1,50 @@
+﻿id: proposal
+name: 项目提案
+scene_keywords: [提案, 方案, 竞标, 报价, 甲方, 客户, 合作, 中标, 项目]
+default_pages: 12
+max_pages: 20
+slots:
+  - id: cover
+    label: 封面
+    mandatory: true
+    description: 项目名称+提案方+客户名称+日期
+  - id: executive
+    label: 执行摘要
+    mandatory: true
+    description: 一页讲清楚: 我们理解你的需求、我们的方案、为什么选我们、预算和周期
+  - id: understanding
+    label: 需求理解
+    mandatory: true
+    description: 对客户需求/痛点的深度解读，证明你听懂了
+  - id: approach
+    label: 方法论
+    mandatory: true
+    description: 你的解决思路和框架，为什么这个思路是对的
+  - id: deliverable
+    label: 交付物
+    mandatory: true
+    description: 具体交付什么、交付标准、验收方式
+  - id: timeline
+    label: 时间规划
+    mandatory: true
+    description: 项目周期、里程碑节点、各阶段产出
+  - id: team
+    label: 项目团队
+    mandatory: true
+    description: 项目负责人+核心成员+分工+相关经验
+  - id: cases
+    label: 过往案例
+    mandatory: false
+    description: 类似项目的成功案例+成果数据
+  - id: budget
+    label: 报价
+    mandatory: true
+    description: 费用构成+付款节奏+包含/不包含项
+  - id: risk
+    label: 风险与保障
+    mandatory: false
+    description: 关键风险+应对措施+服务承诺
+  - id: next
+    label: 下一步
+    mandatory: true
+    description: 明确的下一步行动建议+联系方式

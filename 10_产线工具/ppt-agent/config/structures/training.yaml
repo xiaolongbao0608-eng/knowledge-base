@@ -1,0 +1,43 @@
+﻿id: training
+name: 培训课程
+scene_keywords: [培训, 课程, 教学, 学习, 学员, 讲师, workshop, 教程, 入门, 进阶]
+default_pages: 15
+max_pages: 30
+slots:
+  - id: cover
+    label: 封面
+    mandatory: true
+    description: 课程名称+讲师+日期+机构标识
+  - id: objectives
+    label: 学习目标
+    mandatory: true
+    description: 学员学完能做什么？3-5个具体可衡量的目标
+  - id: outline
+    label: 课程大纲
+    mandatory: true
+    description: 整体结构总览+各模块时间分配
+  - id: module
+    label: 内容模块
+    mandatory: true
+    repeatable: true
+    description: 每个模块: 概念讲解→案例→互动/练习。可重复N次
+  - id: case
+    label: 案例分析
+    mandatory: false
+    description: 真实场景案例拆解，可穿插在模块之间
+  - id: exercise
+    label: 实操练习
+    mandatory: false
+    description: 分组/个人练习+讨论+讲师点评
+  - id: summary
+    label: 要点回顾
+    mandatory: true
+    description: 核心知识点汇总+记忆辅助
+  - id: next-steps
+    label: 课后行动
+    mandatory: true
+    description: 学员课后应完成的练习/阅读+下次课程预告
+  - id: close
+    label: 结尾
+    mandatory: true
+    description: 感谢+联系方式+资料获取方式

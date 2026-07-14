@@ -1,0 +1,40 @@
+﻿order_id: "PPT-20260710-002"
+status: "generating"
+created_at: "2026-07-10T18:30:00+08:00"
+updated_at: "2026-07-10T18:30:00+08:00"
+
+routing:
+  scene: "product-launch"
+  custom_scene_desc: ""
+  scene_keywords: ["户外", "装备", "硬核", "军事", "发布"]
+
+client_info:
+  project_name: "铁穹户外-Titan Dome 战术冲锋衣发布会"
+  audience: "户外运动爱好者/战术装备玩家/经销商"
+
+materials:
+  provided_sections: ["product", "why", "features"]
+  missing_sections: ["tease", "reveal", "demo", "tech", "pricing", "roadmap"]
+  raw_text: "铁穹户外发布新款战术冲锋衣Titan Dome。军用级Cordura面料，防水透气膜，模块化口袋系统。定价1999元，下月开售。"
+  ai_fill_notes: "悬念引入/产品揭晓/技术亮点/价格/路线图由AI填充框架。demo页标注为待客户提供产品图。"
+
+style:
+  style_id: "g-hardcore-industrial"
+  style_source: "recommended"
+  style_description: "户外装备+军工关键词自动匹配硬核工业风"
+  reference_images: []
+
+delivery:
+  format: "pptx"
+  expected_pages: 10
+  free_revisions: 2
+  revision_count: 0
+  deadline: "2026-07-11"
+
+generation:
+  structure_id: "product-launch"
+  outline: []
+  generated_at: ""
+  current_version: 1
+
+revision_history: []

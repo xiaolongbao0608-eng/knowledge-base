@@ -1,0 +1,34 @@
+﻿name: 极简墨韵
+id: d-minimal-ink
+tags: [minimal, creative, design, art, luxury]
+recommend_for: [product-launch, pitch-deck]
+palette:
+  background: "#fefefe"
+  surface: "#ffffff"
+  primary: "#000000"
+  accent: "#c9a96e"
+  text_primary: "#1a1a1a"
+  text_secondary: "#757575"
+  divider: "#e0e0e0"
+typography:
+  heading: "Noto Serif SC, STSongti, serif"
+  body: "Noto Sans SC, Microsoft YaHei, sans-serif"
+  heading_size: "32-42pt"
+  body_size: "13-15pt"
+  heading_weight: 300
+  body_weight: 300
+layout:
+  title_position: "center"
+  grid: "1col-centered-wide"
+  corner_accent: false
+  card_style: "none"
+  page_margin: "10%"
+visual_rules:
+  chart_palette: ["#000000", "#c9a96e", "#555555", "#999999"]
+  icon_style: "thin-line"
+  max_colors_per_slide: 2
+  data_emphasis: "sparse-number"
+description: >
+  大面积留白+纯黑文字+金色点缀。适合设计、艺术、
+  高端品牌、奢品相关发布或路演。极度克制，靠空间感和
+  字体比例说话。要求每页文字量严格限制，不适合数据密集场景。

@@ -1,0 +1,54 @@
+﻿id: pitch-deck
+name: 融资路演
+scene_keywords: [融资, BP, 路演, 投资人, 天使轮, A轮, 创业, 商业计划, 股权]
+default_pages: 12
+max_pages: 18
+slots:
+  - id: cover
+    label: 封面
+    mandatory: true
+    description: 项目名称+一句话价值主张+公司Logo
+  - id: hook
+    label: 开场钩子
+    mandatory: true
+    description: 用一个惊人数据或痛点场景抓住注意力，建立市场紧迫感
+  - id: problem
+    label: 市场痛点
+    mandatory: true
+    description: 目前市场存在什么未被满足的需求？用户/客户在忍受什么
+  - id: solution
+    label: 解决方案
+    mandatory: true
+    description: 你的产品/服务如何解决上述痛点，核心差异化在哪
+  - id: market
+    label: 市场规模
+    mandatory: true
+    description: TAM/SAM/SOM，增长趋势，目标客户画像
+  - id: product
+    label: 产品展示
+    mandatory: true
+    description: 核心功能/使用流程/技术架构，一张清晰的示意图胜过千言
+  - id: traction
+    label: 运营数据
+    mandatory: false
+    description: 已有用户数/收入/增长率/留存/关键里程碑
+  - id: business
+    label: 商业模式
+    mandatory: true
+    description: 怎么赚钱？单价×客户数×毛利率，收入模型
+  - id: competition
+    label: 竞争格局
+    mandatory: false
+    description: 竞品矩阵/护城河/为什么是你而不是他们
+  - id: team
+    label: 团队
+    mandatory: true
+    description: 核心成员+经验+为什么这个团队能做这件事
+  - id: ask
+    label: 融资需求
+    mandatory: true
+    description: 融资金额/估值/资金用途/预期回报里程碑
+  - id: close
+    label: 结尾
+    mandatory: true
+    description: 联系方式+一句话重复价值主张

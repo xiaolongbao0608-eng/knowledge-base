@@ -1,0 +1,46 @@
+﻿id: annual-report
+name: 年终汇报
+scene_keywords: [年终, 汇报, 总结, 述职, 年度, Q4, 季度, 复盘, 董事会, 高管]
+default_pages: 10
+max_pages: 15
+slots:
+  - id: cover
+    label: 封面
+    mandatory: true
+    description: 汇报主题+时间范围+汇报人/部门
+  - id: highlights
+    label: 年度亮点
+    mandatory: true
+    description: 3-5个最亮眼的成果，一页概览，数据驱动
+  - id: kpi-dashboard
+    label: 关键指标达成
+    mandatory: true
+    description: 核心KPI vs 目标值，完成率，同比/环比变化
+  - id: business-review
+    label: 业务回顾
+    mandatory: true
+    description: 按业务线/项目线逐一拆解成果、关键动作、里程碑
+  - id: challenges
+    label: 问题与反思
+    mandatory: true
+    description: 未达成的目标、遇到的重大挑战、根本原因分析
+  - id: solutions
+    label: 改进措施
+    mandatory: true
+    description: 针对每个问题的具体改进方案和时间表
+  - id: team-growth
+    label: 团队成长
+    mandatory: false
+    description: 人员变化/能力建设/文化亮点
+  - id: next-plan
+    label: 明年规划
+    mandatory: true
+    description: 战略方向/核心目标/关键举措/资源需求
+  - id: resource-ask
+    label: 资源需求
+    mandatory: false
+    description: 需要公司层面支持的事项（预算/人力/政策）
+  - id: close
+    label: 结尾
+    mandatory: true
+    description: 一句话总结+致谢

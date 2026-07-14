@@ -1,0 +1,33 @@
+name: 简洁专业
+id: a-clean-professional
+tags: [corporate, general-purpose, boardroom, internal]
+recommend_for: [annual-report, proposal]
+palette:
+  background: "#ffffff"
+  surface: "#f5f6f8"
+  primary: "#1a73e8"
+  accent: "#0d47a1"
+  text_primary: "#202124"
+  text_secondary: "#5f6368"
+  divider: "#e0e0e0"
+typography:
+  heading: "Microsoft YaHei, sans-serif"
+  body: "Microsoft YaHei, sans-serif"
+  heading_size: "28-36pt"
+  body_size: "14-16pt"
+  heading_weight: 700
+  body_weight: 400
+layout:
+  title_position: "top-left"
+  grid: "2col-balanced"
+  corner_accent: false
+  card_style: "flat"
+  page_margin: "5%"
+visual_rules:
+  chart_palette: ["#1a73e8", "#34a853", "#fbbc04", "#ea4335"]
+  icon_style: "outline"
+  max_colors_per_slide: 3
+  data_emphasis: "bold-number"
+description: >
+  白底蓝调，克制专业。适合内部汇报、项目提案等需要
+  清晰传达信息的场景。不抢内容，属于第一安全选择。

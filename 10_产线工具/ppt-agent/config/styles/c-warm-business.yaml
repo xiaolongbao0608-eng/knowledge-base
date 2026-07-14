@@ -1,0 +1,33 @@
+name: 温暖商务
+id: c-warm-business
+tags: [consulting, service, education, healthcare, consumer]
+recommend_for: [proposal, training]
+palette:
+  background: "#faf8f5"
+  surface: "#ffffff"
+  primary: "#e8734a"
+  accent: "#2c3e50"
+  text_primary: "#2c3e50"
+  text_secondary: "#6b7c8e"
+  divider: "#e8e2d9"
+typography:
+  heading: "Noto Serif SC, STSong, serif"
+  body: "Microsoft YaHei, sans-serif"
+  heading_size: "26-34pt"
+  body_size: "14-16pt"
+  heading_weight: 600
+  body_weight: 400
+layout:
+  title_position: "top-center"
+  grid: "1col-centered"
+  corner_accent: false
+  card_style: "soft-shadow"
+  page_margin: "7%"
+visual_rules:
+  chart_palette: ["#e8734a", "#2c3e50", "#f0b27a", "#85929e"]
+  icon_style: "outline"
+  max_colors_per_slide: 3
+  data_emphasis: "subtle-number"
+description: >
+  暖米白底+陶土橙主色+衬线标题。适合咨询、教育、
+  消费服务类提案或培训课件。传递专业但不高冷的温度感。

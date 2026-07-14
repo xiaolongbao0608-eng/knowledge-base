@@ -1,0 +1,63 @@
+﻿order_id: "PPT-20260710-001"
+status: "review"
+created_at: "2026-07-10T17:37:00+08:00"
+updated_at: "2026-07-10T18:00:00+08:00"
+
+routing:
+  scene: "pitch-deck"
+  custom_scene_desc: ""
+  scene_keywords: ["融资", "BP", "AI", "短剧", "种子轮"]
+
+client_info:
+  project_name: "幻海科技-AI短剧融资BP"
+  audience: "风险投资人/天使投资人"
+
+materials:
+  provided_sections: ["product", "solution", "team", "ask"]
+  missing_sections: ["hook", "problem", "market", "traction", "business", "competition"]
+  uploaded_files: []
+  raw_text: "我们叫幻海科技，用AI生成竖屏短剧——输入剧本，AI自动生成完整短剧视频。传统短剧制作成本高、周期长，我们用AI把成本降到1/10。团队3个人：我做了3年短视频MCN，CTO前字节跳动AI工程师。种子轮融500万，出让10%。"
+  ai_fill_notes: "hook/市场痛点/市场规模/商业模式/竞争格局由AI根据行业知识自动填充框架。运营数据页生成占位模板待客户补充。"
+
+style:
+  style_id: "g-hardcore-industrial"
+  style_source: "user_described"
+  style_description: "硬核军工/户外装备发布、后末日题材影视概念、重工业/工程机械投标、男性向硬核游戏宣发——黄沙铁锈色+枪铁灰+警示红，锐线字体，六边形蜂窝底纹，铆钉分隔线，黑黄警示带标题栏"
+  reference_images: []
+
+delivery:
+  format: "pptx"
+  expected_pages: 12
+  free_revisions: 2
+  revision_count: 1
+  deadline: "2026-07-11"
+
+generation:
+  structure_id: "pitch-deck"
+  outline:
+    - {page_num: 1, slot_id: "cover", title: "封面", status: "content_done"}
+    - {page_num: 2, slot_id: "hook", title: "开场钩子", status: "content_done"}
+    - {page_num: 3, slot_id: "problem", title: "市场痛点", status: "content_done"}
+    - {page_num: 4, slot_id: "solution", title: "解决方案", status: "content_done"}
+    - {page_num: 5, slot_id: "market", title: "市场规模", status: "content_done"}
+    - {page_num: 6, slot_id: "product", title: "产品展示", status: "content_done"}
+    - {page_num: 7, slot_id: "traction", title: "运营数据", status: "placeholder"}
+    - {page_num: 8, slot_id: "business", title: "商业模式", status: "content_done"}
+    - {page_num: 9, slot_id: "competition", title: "竞争格局", status: "placeholder"}
+    - {page_num: 10, slot_id: "team", title: "团队", status: "content_done"}
+    - {page_num: 11, slot_id: "ask", title: "融资需求", status: "content_done"}
+    - {page_num: 12, slot_id: "close", title: "结尾", status: "content_done"}
+  generated_at: "2026-07-10T17:45:00+08:00"
+  current_version: 3
+
+revision_history:
+  - round: 0
+    requested_by: ""
+    request: "初始生成 (b-dark-cyber)"
+    changes: "12页完整内容生成，2页占位"
+    status: "done"
+  - round: 1
+    requested_by: "user"
+    request: "换风格 → g-hardcore-industrial"
+    changes: "重新加载风格YAML，渲染12页硬核工业风。内容不动，只换视觉。"
+    status: "done"

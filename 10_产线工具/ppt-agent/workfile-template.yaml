@@ -1,0 +1,56 @@
+﻿# 工作文件模板 - PPT Agent 状态管理
+# 每个订单一个workfile，生命周期覆盖从接单到交付
+
+order_id: ""                    # 订单编号，生成后填入
+status: "initialized"           # initialized | collecting | generating | review | revising | delivered
+created_at: ""
+updated_at: ""
+
+# 阶段0: 意图路由结果
+routing:
+  scene: ""                     # pitch-deck | annual-report | product-launch | training | proposal | custom
+  custom_scene_desc: ""         # 如scene=custom，存用户原始描述
+  scene_keywords: []            # 提取的关键词
+
+# 阶段1: 场景确认后
+client_info:
+  project_name: ""              # 用户填的项目名称
+  audience: ""                  # 目标受众（从场景推导或用户填写）
+
+# 阶段2: 结构化收资
+materials:
+  provided_sections: []         # 用户已提供素材的slot id列表
+  missing_sections: []          # 用户未提供素材的slot id列表
+  uploaded_files: []            # 用户上传的文件路径
+  raw_text: ""                  # 用户直接输入的文字素材
+  ai_fill_notes: ""             # AI补充了哪些内容
+
+# 阶段3: 风格确认
+style:
+  style_id: ""                  # 选中的风格ID
+  style_source: ""              # recommended | user_picked | user_described
+  style_description: ""         # 如user_described，存用户原话
+  reference_images: []          # 用户提供的参考图路径
+
+# 交付参数
+delivery:
+  format: "pptx"                # pptx | html | google-slides
+  expected_pages: 0             # 预期页数
+  free_revisions: 2             # 免费修改轮次
+  revision_count: 0             # 已用修改轮次
+  deadline: ""                  # 交付时间
+
+# 生成结果
+generation:
+  structure_id: ""              # 使用的结构模板ID
+  outline: []                   # 最终确定的大纲 [{page_num, slot_id, title, status}]
+  generated_at: ""
+  current_version: 1
+
+# 修改记录
+revision_history:
+  - round: 0
+    requested_by: ""
+    request: ""
+    changes: ""
+    status: ""

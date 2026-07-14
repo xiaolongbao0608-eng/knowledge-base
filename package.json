@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "jszip": "^3.10.1",
+    "localtunnel": "^2.0.2",
+    "pptxgenjs": "^4.0.1",
+    "puppeteer-core": "^25.3.0",
+    "surge": "^0.31.1"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}

@@ -1,0 +1,34 @@
+﻿name: 典雅经典
+id: f-elegant-classic
+tags: [finance, legal, government, luxury, heritage]
+recommend_for: [annual-report, proposal]
+palette:
+  background: "#fcfaf7"
+  surface: "#f5f0e8"
+  primary: "#1b3a4b"
+  accent: "#8b7355"
+  text_primary: "#1b3a4b"
+  text_secondary: "#5c6b73"
+  divider: "#d4c5b2"
+typography:
+  heading: "Noto Serif SC, SimSun, serif"
+  body: "Noto Sans SC, Microsoft YaHei, sans-serif"
+  heading_size: "28-36pt"
+  body_size: "14-16pt"
+  heading_weight: 600
+  body_weight: 400
+layout:
+  title_position: "top-left"
+  grid: "golden-ratio-2col"
+  corner_accent: false
+  card_style: "border"
+  page_margin: "8%"
+visual_rules:
+  chart_palette: ["#1b3a4b", "#8b7355", "#3a5a40", "#9b8a7a"]
+  icon_style: "outline"
+  max_colors_per_slide: 3
+  data_emphasis: "classic-number"
+description: >
+  羊皮纸暖底+深海蓝主色+衬线字体+金色细节。适合金融、
+  法律、政府、传统企业、文化遗产类场景。沉稳厚重，
+  传递可靠感和历史纵深。

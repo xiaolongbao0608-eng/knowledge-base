@@ -1,0 +1,46 @@
+﻿id: product-launch
+name: 产品发布会
+scene_keywords: [发布, 新品, 发布会, 上市, launch, 产品, 演示, demo, 媒体, 客户]
+default_pages: 10
+max_pages: 20
+slots:
+  - id: cover
+    label: 封面
+    mandatory: true
+    description: 产品名+发布日期+品牌标识
+  - id: tease
+    label: 悬念引入
+    mandatory: false
+    description: 用一个问题、场景或故事引起好奇，建立期待
+  - id: why
+    label: 为什么做这个产品
+    mandatory: true
+    description: 洞察到的用户需求或行业变化，产品诞生的初衷
+  - id: reveal
+    label: 产品揭晓
+    mandatory: true
+    description: 产品全貌+核心卖点一句话概括+产品图
+  - id: features
+    label: 核心功能
+    mandatory: true
+    description: 3-5个核心功能的详细展示，每个功能一页或半页
+  - id: demo
+    label: 体验演示
+    mandatory: false
+    description: 使用场景演示/效果对比/操作流程
+  - id: tech
+    label: 技术亮点
+    mandatory: false
+    description: 关键技术突破/性能指标/专利壁垒
+  - id: pricing
+    label: 价格与购买
+    mandatory: true
+    description: 定价策略/套餐/购买渠道/首发优惠
+  - id: roadmap
+    label: 未来路线图
+    mandatory: false
+    description: 后续版本功能规划/时间线
+  - id: close
+    label: 结尾
+    mandatory: true
+    description: CTA+购买方式+联系方式

@@ -1,12 +1,99 @@
-﻿# Obsidian
+﻿# ── Obsidian ──
 .obsidian/workspace.json
 .obsidian/workspace
 .obsidian/cache/
 .obsidian/plugins/*/data.json
 
-# OS
+# ── Node ──
+node_modules/
+
+# ── VitePress build output ──
+.vitepress/dist/
+.vitepress/cache/
+
+# ── OS ──
 Thumbs.db
 .DS_Store
+Desktop.ini
+*.log
 
-# Node
-node_modules/
+# ── 归档/废弃/外部项目目录 ──
+_归档/
+项目/
+Obsidian/
+衍谷ob/
+aigc项目/
+strategy-five-dim-deductor/
+合同/
+小红包/
+kb-wiki/
+
+# ── 02_产品课程：只保留 .md 和 .txt，其他所有文件忽略 ──
+02_产品课程/**
+!02_产品课程/**/*.md
+!02_产品课程/**/*.txt
+
+# ── 01_公司基础/co公司内容：AI 生图产出物/PSD/Python 脚本 —— 全忽略 ──
+01_公司基础/co公司内容/*.py
+01_公司基础/co公司内容/*.js
+01_公司基础/co公司内容/*.psd
+01_公司基础/co公司内容/*.png
+01_公司基础/co公司内容/*.jpg
+01_公司基础/co公司内容/*.html
+01_公司基础/co公司内容/.design/
+01_公司基础/co公司内容/20260705-162029-source-slide/
+01_公司基础/co公司内容/opc-slides-png/
+01_公司基础/co公司内容/opc-slides-rendered/
+01_公司基础/co公司内容/opc-slides-run/
+
+# ── 01_公司基础 图片/品牌素材（非 md 内容不需要提交） ──
+01_公司基础/中广文件/*.png
+01_公司基础/中广文件/*.jpg
+01_公司基础/中广文件/*.jfif
+01_公司基础/中广文件/*.webp
+01_公司基础/公司注册/*.png
+01_公司基础/公司注册/*.jpg
+01_公司基础/品牌视觉/*.png
+01_公司基础/品牌视觉/*.jpg
+
+# ── 第三方软件包（ComfyUI + Python 运行时 + AI 模型） ──
+02_产品课程/**/ComfyUI/**
+02_产品课程/**/python_embeded/**
+02_产品课程/**/*.mp4
+02_产品课程/**/*.mov
+02_产品课程/**/*.zip
+02_产品课程/**/*.rar
+02_产品课程/**/*.7z
+
+# ── AI 模型 ──
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.onnx
+*.gguf
+*.sft
+
+# ── 通用大文件 ──
+*.zip
+*.rar
+*.7z
+*.tar.gz
+*.gz
+*.bz2
+*.exe
+*.msi
+*.dmg
+*.mp3
+*.wav
+
+# ── 文档二进制 ──
+*.pptx
+*.ppt
+*.pdf
+*.docx
+*.doc
+*.xlsx
+*.xls
+*.psd

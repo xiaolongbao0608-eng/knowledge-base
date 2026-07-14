@@ -1,0 +1,56 @@
+﻿name: 硬核工业
+id: g-hardcore-industrial
+tags: [military, outdoor, post-apocalyptic, heavy-industry, engineering, gaming, masculine, hardware]
+recommend_for: [product-launch, pitch-deck, proposal]
+palette:
+  background: "#1e1a17"
+  surface: "#2a2420"
+  primary: "#c87a3e"
+  accent: "#d32f2f"
+  text_primary: "#d4c5b9"
+  text_secondary: "#8a8078"
+  divider: "#3e4147"
+  warning_stripe_bg: "#1a1a1a"
+  warning_stripe_fg: "#f5a623"
+typography:
+  heading: "Bebas Neue, Impact, Microsoft YaHei, sans-serif"
+  body: "Microsoft YaHei, Roboto, sans-serif"
+  heading_size: "34-44pt"
+  body_size: "13-15pt"
+  heading_weight: 800
+  body_weight: 400
+  heading_transform: "uppercase"
+  heading_effect: "metallic-gradient or outline-stroke"
+layout:
+  title_position: "top-left"
+  grid: "asymmetric-2col"
+  corner_accent: false
+  card_style: "armor-layered"
+  page_margin: "5%"
+  separator_style: "rivet-line"
+  title_bar: "diagonal-warning-stripes"
+  grid_overlay: "hexagonal"
+visual_rules:
+  chart_palette: ["#c87a3e", "#d32f2f", "#3e4147", "#f5a623"]
+  icon_style: "filled-hard-edge"
+  max_colors_per_slide: 3
+  data_emphasis: "dashboard-gauge"
+  chart_types: ["radar", "gauge", "hexbin", "bar-with-scale"]
+  corner_radius: 0
+  edge_style: "sharp-90deg"
+  texture_overlay: true
+description: >
+  黄沙铁锈+枪铁灰+警示红，深褐底色叠加脏旧纹理。
+  铆钉分隔线、黑黄警示带标题栏、六边形蜂窝网格底纹。
+  极锋利直角+叠层铠甲边缘+仪表盘/雷达图。
+  锐线体/超粗黑中文字体+Impact/Bebas Neue英文，
+  金属质感渐变或镂空描边。适配硬核军工、户外装备、
+  后末日题材、重工业投标、男性向硬核游戏。
+texture:
+  type: "dirty-grunge-overlay"
+  opacity: 0.12
+  pattern: "scratched-metal + dust-noise"
+image_guide:
+  style: "high-contrast-high-grain-bw"
+  subjects: ["worn metal texture", "gas mask", "desert ruin drone shot", "industrial machinery detail"]
+  treatment: "desaturated with rust tint overlay"

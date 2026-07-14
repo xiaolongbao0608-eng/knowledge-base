@@ -1,0 +1,67 @@
+﻿name: 孟菲斯·多巴胺狂欢
+id: h-memphis-dopamine
+tags: [memphis, fash-fashion, creative, advertising, youth, campus, art-exhibition, pop-culture, social-media]
+recommend_for: [product-launch, training, pitch-deck]
+palette:
+  background: "#fff8f0"
+  surface: "#ffffff"
+  primary: "#ff69b4"
+  accent: "#ffe600"
+  secondary_1: "#7fdbff"
+  secondary_2: "#ff6b6b"
+  secondary_3: "#9b59b6"
+  secondary_4: "#2ecc71"
+  text_primary: "#2c2c2c"
+  text_secondary: "#555555"
+  divider: "#e0c8d8"
+  stroke_outline: "#1a1a1a"
+  terrazzo_speckle_1: "#ff69b4"
+  terrazzo_speckle_2: "#ffe600"
+  terrazzo_speckle_3: "#7fdbff"
+  terrazzo_speckle_4: "#ff6b6b"
+typography:
+  heading: "Varela Round, Rounded Mplus 1c, Microsoft YaHei, sans-serif"
+  body: "Varela Round, Microsoft YaHei, sans-serif"
+  heading_size: "32-44pt"
+  body_size: "14-16pt"
+  heading_weight: 800
+  body_weight: 400
+  heading_effect: "outline-stroke-fill"
+  heading_fill: "#ff69b4"
+  heading_stroke: "#1a1a1a"
+layout:
+  title_position: "scattered"
+  grid: "anti-grid-scattered"
+  corner_accent: false
+  card_style: "double-border-rounded"
+  page_margin: "4%"
+  separator_style: "wavy-dotted"
+  title_bar: "none"
+  grid_overlay: "terrazzo-speckle"
+  rotation_random: true
+  element_wobble: true
+visual_rules:
+  chart_palette: ["#ff69b4", "#ffe600", "#7fdbff", "#ff6b6b", "#9b59b6", "#2ecc71"]
+  icon_style: "pixel-or-handdrawn"
+  max_colors_per_slide: 6
+  data_emphasis: "playful-bubble"
+  chart_types: ["donut", "bubble", "pictogram", "emoji-grid"]
+  corner_radius: "16pt"
+  edge_style: "fully-rounded"
+  border_style: "double-line-or-dashed"
+  texture_overlay: false
+description: >
+  高饱和高明度随机碰撞：芭比粉撞亮黄、蒂芙尼蓝配珊瑚橙。
+  粗条纹渐变+水磨石纹理背景。刻意反网格——元素歪斜、
+  随机散落、大小无序，页面充满"溢出来"的活泼感。
+  顿点描边+波浪线+3D仿真符号。粗壮圆体+描边填充效果。
+  Lo-Fi复古拼贴+像素风Icon+手绘涂鸦。
+  适配快消品营销、创意比稿、高校招新、潮流策展。
+decorations:
+  shapes: ["squiggle", "dot-grid", "star-burst", "dice-3d", "banana-emoji", "wavy-line", "confetti-dot"]
+  border_style: "double-line"
+  accent_scatter: true
+image_guide:
+  style: "lo-fi-retro-collage"
+  subjects: ["pixel art icons", "hand-drawn doodles", "cut-out magazine collage", "sticker-style illustrations"]
+  treatment: "bright, slightly desaturated with warm tint"
