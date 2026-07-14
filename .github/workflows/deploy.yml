@@ -1,14 +1,9 @@
-#
-# GitHub Pages 部署工作�?# 每当 push �?master/main 分支时自动构�?VitePress 并部署到 Pages
-#
-name: Deploy VitePress to GitHub Pages
+# VitePress 鈫?GitHub Pages 鑷姩閮ㄧ讲
+# push 鍒?main/master 鏃惰Е鍙?name: Deploy VitePress to GitHub Pages
 
 on:
   push:
-    branches:
-      - master
-      - main
-
+    branches: [master, main]
   workflow_dispatch:
 
 permissions:
@@ -24,25 +19,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
-
-      - name: Install dependencies
-        run: npm install --prefer-offline
-
-      - name: Build VitePress
-        run: npx vitepress build .
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - run: npm install --ignore-scripts
+      - run: npx vitepress build .
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: .vitepress/dist
 
@@ -53,7 +39,5 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
+      - id: deployment
         uses: actions/deploy-pages@v4
-
