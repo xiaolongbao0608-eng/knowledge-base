@@ -97,6 +97,8 @@ export default defineConfig({
     '衍谷ob/**',
     'Obsidian/**',
     'strategy-five-dim-deductor/**',
+    // 公司工作台缺口与分发说明留在仓库供验收，不编进公开知识库站点
+    '.80_项目工程区/**',
     '.vitepress/**',
     '.git/**',
     // 第三方软件包/运行时 — 避免 Mustache/HTML 触发 Vue 模板解析错误
